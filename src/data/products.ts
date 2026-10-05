@@ -10,6 +10,7 @@ export type Product = {
   price: number;
   image: string;
   bg: string;
+  
   badge?: string;
 };
 
