@@ -25,7 +25,7 @@ export default function Home() {
       <section className="section container">
         <h2>Best sellers</h2>
         <div className="grid">
-          {products.map((p) => <ProductCard key={p.id} product={p} />)}
+          {products.filter((p) => p.bestSeller).map((p) => <ProductCard key={p.id} product={p} />)}
         </div>
       </section>
 

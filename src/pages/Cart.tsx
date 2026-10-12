@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useCart } from "../CartContext";
 import { formatKsh } from "../data/products";
 
+
 export default function Cart() {
   const { items, total, setQty, remove, clear } = useCart();
   const [done, setDone] = useState(false);
