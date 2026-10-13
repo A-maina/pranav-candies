@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 import { products, flavours, testimonials } from "../data/products";
+import mascot from "../assets/mascot.png";
 
 export default function Home() {
   return (
@@ -9,16 +10,16 @@ export default function Home() {
         <div className="container hero-grid">
           <div>
             <span className="tag">Made fresh in Nairobi</span>
-            <h1>Little bites of pure joy.</h1>
-            <p className="lead">
-              Handmade truffles, fudge and fruity treats — wrapped with love and delivered to your door.
-            </p>
+            <h1>All sweet things start here.</h1>
+<p className="lead">Cool mints, fruity bursts, spicy kicks and creamy classics, delivered to your door.</p>
             <div className="btn-row">
               <Link to="/shop" className="btn">Shop Now</Link>
               <Link to="/stores" className="btn btn-outline">Visit a store</Link>
             </div>
           </div>
-          <div className="hero-art">🍬🍫🍑</div>
+          <div className="hero-art">
+              <img src={mascot} alt="Pranav Candies mascot holding the Pranav sign" />
+            </div>
         </div>
       </section>
 
